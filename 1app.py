@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-df = pd.read_csv('')
+
 st.title('Dashboard interactivo de notas')
 st.header('!Buenas tardes, profesora¡')
 st.text('Esta aplicación sirve para...')
