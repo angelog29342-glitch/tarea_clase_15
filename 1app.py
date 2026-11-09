@@ -11,4 +11,4 @@ st.sidebar.text('Buenas tardes, esta seccion es lo mismo que la de la derecha pe
 st.sidebar.image('logo.png.png')
 st.sidebar.button('No hagas clic aquí')
 aztec = st.sidebar.text_input('Escriba denuevo')
-st.write('Escribió:', aztec)
+st.sidebar.write('Escribió:', aztec)
