@@ -13,6 +13,6 @@ st.sidebar.header('Datos y filtros:')
 st.sidebar.text('Buenas tardes, esta seccion es lo mismo que la de la derecha pero mas pequeña.')
 st.sidebar.image('logo.png.png')
 st.sidebar.button('No hagas clic aquí'):
-  st.write('!VIRUS¡)
+  st.write('!VIRUS¡')
 aztec = st.sidebar.text_input('Escriba denuevo')
 st.sidebar.write('Escribió:', aztec)
