@@ -1,6 +1,6 @@
 import streamlit as st
 st.title('Segunda aplicación de Streamlit')
-st.header('!Buenas tardes, profesora¡)
+st.header('!Buenas tardes, profesora¡')
 st.text('Esta aplicación sirve para...')
 st.image('logo.png.png')
 maya = st.text_input('Escriba aquí')
