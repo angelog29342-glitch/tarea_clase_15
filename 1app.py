@@ -2,9 +2,11 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
+st.set_page_config(layout='wide')
+
 st.title('Dashboard interactivo de notas')
 st.header('!Buenas tardes, profesora¡')
-st.text('Esta aplicación sirve para...')
+st.text('Explora los resultados de un curso combinando filtros. Promedio: 50% de cada evaluación. Aprobación del ejercicio: promedio >= 4')
 st.image('logo.png.png')
 if st.button('Haga clic aquí'):
   st.write('!PRESIONASTE EL BOTÓN¡')
