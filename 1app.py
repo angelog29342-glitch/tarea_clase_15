@@ -31,7 +31,7 @@ st.sidebar.caption('Los filtros se combinan, quitar ambos géneros deja la secci
 filtros=(df['sexo'].isin(géneros)) & df['promedio'].between(prom_min, prom_max) & (df['asistencia']>=asist_min)
 if seccion != 'Todas':
          filtro=filtro & (df['sección'] == seccion)
-df_sel = df[filtro]
+df_sel = df[filtros]
 
 st.markdown(f'**Filtros activos:** {', '.join(géneros)}, Sección: {seccion}' f'Promedio: {prom_min} a {prom_max}, Asistencia mínima: {asist_min}%')
 if len(df_sel) == 0:
