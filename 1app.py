@@ -24,6 +24,6 @@ géneros=st.sidebar.multiselect('Géneros',['Hombre','Mujer'], default=['Hombre'
 opciones_seccion = ['Todas'] + sorted(df['seccion'].unique())
 seccion=st.sidebar.selectbox('Sección', opciones_seccion())
 st.sidebar.image('logo.png.png')
-prom_min, prom_max = st.sidebar.slider('Rango promedio' 1.0, 7.0, (1.0, 7.0), format='%.2f')
+prom_min, prom_max = st.sidebar.slider('Rango del promedio', 1.0, 7.0, (1.0, 7.0), format='%.2f')
 asist_min=st.sidebar.number_input('Asistencia mínima (%)', min_value=0, max_value=100, value=0)
 st.sidebar.caption('Los filtros se combinan, quitar ambos géneros deja la sección vacía.')
