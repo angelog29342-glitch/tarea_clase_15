@@ -14,7 +14,7 @@ maya = st.text_input('Escriba aquí')
 st.write('Escribió:', maya)
 st.sidebar.header('Datos y filtros:')
 st.sidebar.text('Buenas tardes, esta seccion es lo mismo que la de la derecha pero mas pequeña.')
-file = st.side.file_uploader('Cargue el archivo aquí', type=['csv'])
+file = st.sidebar.file_uploader('Cargue el archivo aquí', type=['csv'])
 if file is None:
   st.info('Suba el archivo al costado para comenzar')
   st.stop()
@@ -28,3 +28,4 @@ if st.sidebar.button('No hagas clic aquí'):
   st.sidebar.write('!VIRUS¡')
 aztec = st.sidebar.text_input('Escriba denuevo')
 st.sidebar.write('Escribió:', aztec)
+
