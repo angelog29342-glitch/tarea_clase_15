@@ -27,3 +27,11 @@ st.sidebar.image('logo.png.png')
 prom_min, prom_max = st.sidebar.slider('Rango del promedio', 1.0, 7.0, (1.0, 7.0), format='%.2f')
 asist_min=st.sidebar.number_input('Asistencia mínima (%)', min_value=0, max_value=100, value=0)
 st.sidebar.caption('Los filtros se combinan, quitar ambos géneros deja la sección vacía.')
+
+filtros=(df['género'].isin(géneros) & df['promedio'].between(prom_min, prom_max) & (df['asistencia']>=asist_min)
+if seccion != 'Todas':
+         filtro=filtro & (df['sección'] == seccion)
+
+# df_sel=df[filtro]
+
+st.markdown(f'**Filtros activos:** {', '.join(géneros)}, Sección: {seccion}' f'Promedio: {prom_min} a {prom_max}, Asistencia mínima: {asist_min}%')
