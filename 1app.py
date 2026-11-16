@@ -22,7 +22,7 @@ df=pd.read_csv(file, encoding='utf-8-sig')
 df['promedio']=(df['nota_1']+df['nota_2'])/2
 géneros=st.sidebar.multiselect('Géneros',['Hombre','Mujer'], default=['Hombre','Mujer'])
 opciones_seccion = ['Todas'] + sorted(df['seccion'].unique())
-seccion=st.sidebar.selectbox('Sección', opciones_seccion())
+seccion=st.sidebar.selectbox('Sección', opciones_seccion)
 st.sidebar.image('logo.png.png')
 prom_min, prom_max = st.sidebar.slider('Rango del promedio', 1.0, 7.0, (1.0, 7.0), format='%.2f')
 asist_min=st.sidebar.number_input('Asistencia mínima (%)', min_value=0, max_value=100, value=0)
